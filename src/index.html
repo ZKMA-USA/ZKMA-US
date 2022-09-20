@@ -6,40 +6,87 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ZKMA US</title>
     <link rel="stylesheet" href="./style.css" />
-    <script type="text/javascript" src="./app.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <script type="text/javascript" src="./app.js" defer></script>
   </head>
   <body>
-    <h1>ZKMA-USA</h1>
-    <div>
-      <h2>Tomorrows Technology for Today's Applications</h2>
-      <nav>
-        <ul>
-          <li>Home</li>
-          <li>Products</li>
-          <li>Technology</li>
-          <li>News</li>
-          <li>Contact</li>
-        </ul>
-      </nav>
-
-      <div class="hero-img"></div>
-
-      <div class="carousel">
-        <div class="product">
-          <img src="./assets/C-300_100W.jpg" alt="A photo of the C-300 100W Chiller" /><button>
-            C-300 100W Chiller
-          </button>
-        </div>
-        <div class="product">
-          <img src="./assets/Z-3000_1200W.jpg" alt="A photo of the Z-3000 1200W Chiller" /><button>Z-3000 1200W Chiller</button>
-        </div>
-        <div class="product">
-          <img src="./assets/Z-6000_2400W.jpg" alt="A photo of the Z-6000 2400W Chiller" /><button>Z-6000 2400W Chiller</button>
-        </div>
-        <div class="product">
-          <img src="./assets/Z-500_600.jpg" alt="A photo of the Z-500/600 MOCVD Chiller" /><button>Z-500/600 MOCVD Chiller</button>
+    <nav class="navbar navbar-expand-lg bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">ZKMA USA</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Dropdown
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Product 1</a></li>
+                <li><a class="dropdown-item" href="#">Product 2</a></li>
+                <li><a class="dropdown-item" href="#">Product 3</a></li>
+              </ul>
+            </li>
+        
         </div>
       </div>
+    </nav>
+
+    <div id="product-carousel" class="carousel carousel-dark slide" data-bs-ride="true">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#product-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#product-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#product-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="carousel-caption d-none d-md-block">
+            <h4>C-300 100W Chiller</h4>
+          </div>
+          <img
+          class="img-fluid"
+            src="./assets/C-300_100W.jpg"
+            alt="A photo of the C-300 100W Chiller"
+          />
+        </div>
+        <div class="carousel-item">
+          <div class="carousel-caption d-none d-md-block">
+            <h4>Z-3000 1200W Chiller</h4>
+          </div>
+          <img
+          class="img-fluid"
+            src="./assets/Z-3000_1200W.jpg"
+            alt="A photo of the Z-3000 1200W Chiller"
+          />
+        </div>
+        <div class="carousel-item">
+          <div class="carousel-caption d-none d-md-block">
+            <h4>Z-6000 2400W Chiller</h4>
+          </div>
+          <img
+          class="img-fluid"
+            src="./assets/Z-6000_2400W.jpg"
+            alt="A photo of the Z-6000 2400W Chiller"
+          />
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#product-carousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#product-carousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
+     
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
   </body>
 </html>
